@@ -23,6 +23,19 @@ header {
     align-items: center;
     padding: 22px 7%;
     background: white;
+}/* ARRIÈRE-PLAN DE LA PAGE D'ACCUEIL */
+
+#accueil {
+    background-image: 
+        linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.35)),
+        url("ecoze ar hero.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    padding: 80px 8%;
 }
 
 .logo {
