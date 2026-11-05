@@ -1,6 +1,6 @@
-/* =========================
+/* ==========================
    CONFIGURATION GENERALE
-========================= */
+========================== */
 
 * {
     margin: 0;
@@ -18,9 +18,9 @@ body {
     color: #354536;
 }
 
-/* =========================
+/* ==========================
    NAVIGATION
-========================= */
+========================== */
 
 header {
     display: flex;
@@ -45,36 +45,42 @@ nav {
     gap: 28px;
 }
 
-nav a, .cart {
+nav a,
+.cart {
     text-decoration: none;
     color: #354536;
 }
 
-/* =========================
+/* ==========================
    PAGE D'ACCUEIL
-========================= */
+========================== */
 
 .hero {
     min-height: 520px;
+    width: 100%;
+
     display: flex;
     align-items: center;
+
     padding: 70px 10%;
 
-    /* Nouvelle photo d'arriere-plan */
+    /* IMAGE D'ARRIERE-PLAN */
     background-image:
         linear-gradient(
-            rgba(0, 0, 0, 0.25),
-            rgba(0, 0, 0, 0.25)
+            rgba(0, 0, 0, 0.20),
+            rgba(0, 0, 0, 0.20)
         ),
-        url("./images/background.jpeg");
+        url("./background.jpeg");
 
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
 .hero-content {
     max-width: 570px;
+    position: relative;
+    z-index: 1;
 }
 
 .subtitle {
@@ -103,11 +109,13 @@ nav a, .cart {
     border-radius: 5px;
 }
 
-/* =========================
+/* ==========================
    CATEGORIES
-========================= */
+========================== */
 
-.categories, .shop, .about {
+.categories,
+.shop,
+.about {
     text-align: center;
     padding: 65px 7%;
 }
@@ -126,9 +134,9 @@ nav a, .cart {
     border-radius: 8px;
 }
 
-/* =========================
+/* ==========================
    PRODUITS
-========================= */
+========================== */
 
 .products {
     display: grid;
@@ -167,18 +175,18 @@ nav a, .cart {
     width: 100%;
 }
 
-/* =========================
+/* ==========================
    PRESENTATION
-========================= */
+========================== */
 
 .about {
     background: #e9eade;
     line-height: 1.8;
 }
 
-/* =========================
+/* ==========================
    PIED DE PAGE
-========================= */
+========================== */
 
 footer {
     text-align: center;
@@ -188,9 +196,9 @@ footer {
     line-height: 2;
 }
 
-/* =========================
+/* ==========================
    VERSION TELEPHONE
-========================= */
+========================== */
 
 @media (max-width: 700px) {
 
@@ -207,7 +215,7 @@ footer {
     .hero {
         min-height: 450px;
         padding: 50px 7%;
-        background-position: center;
+        background-position: center center;
     }
 
     .hero h1 {
