@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECOWEAR - Mode responsable</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">ECO<span>WEAR</span></div>
+
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#boutique">Boutique</a>
+            <a href="#apropos">À propos</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#boutique" class="cart">Panier 🛍️</a>
+    </header>
+
+    <main>
+        <section class="hero" id="accueil">
+            <div class="hero-content">
+                <p class="subtitle">LA MODE RESPONSABLE</p>
+
+                <h1>La mode mérite une seconde vie.</h1>
+
+                <p>
+                    Achetez et vendez des vêtements
+                    de seconde main.
+                    Consommez autrement avec ECOWEAR.
+                </p>
+
+                <a href="#boutique" class="btn">
+                    Découvrir la boutique
+                </a>
+            </div>
+        </section>
+
+        <section class="categories">
+            <h2>Nos catégories</h2>
+            <p>Explorez notre univers</p>
+
+            <div class="category-list">
+                <div>Femme</div>
+                <div>Homme</div>
+                <div>Chaussures</div>
+                <div>Accessoires</div>
+            </div>
+        </section>
+
+        <section class="shop" id="boutique">
+            <h2>Nos nouveautés</h2>
+            <p>Découvrez nos articles de seconde main.</p>
+
+            <div class="products">
+                <div class="product">
+                    <img src="https://placehold.co/400x450/e8e5dc/465447?text=Veste"
+                         alt="Veste">
+                    <h3>Veste vintage</h3>
+                    <p>150 DH</p>
+                    <button onclick="addToCart('Veste vintage')">
+                        Ajouter au panier
+                    </button>
+                </div>
+
+                <div class="product">
+                    <img src="https://placehold.co/400x450/e8e5dc/465447?text=Sac"
+                         alt="Sac">
+                    <h3>Sac élégant</h3>
+                    <p>120 DH</p>
+                    <button onclick="addToCart('Sac élégant')">
+                        Ajouter au panier
+                    </button>
+                </div>
+
+                <div class="product">
+                    <img src="https://placehold.co/400x450/e8e5dc/465447?text=Robe"
+                         alt="Robe">
+                    <h3>Robe chic</h3>
+                    <p>100 DH</p>
+                    <button onclick="addToCart('Robe chic')">
+                        Ajouter au panier
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="apropos">
+            <h2>Bienvenue chez ECOWEAR</h2>
+            <p>
+                Notre mission est de promouvoir une mode durable,
+                accessible et responsable.
+                Donnons ensemble une seconde vie aux vêtements.
+            </p>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <h2>ECOWEAR</h2>
+        <p>La mode mérite une seconde vie.</p>
+        <p>© 2026 ECOWEAR - Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

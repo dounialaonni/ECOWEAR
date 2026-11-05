@@ -1,0 +1,185 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f7f1;
+    color: #354536;
+}
+
+/* NAVIGATION */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 7%;
+    background: white;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #405b46;
+}
+
+.logo span {
+    color: #a4ad91;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a, .cart {
+    text-decoration: none;
+    color: #354536;
+}
+
+/* PAGE D'ACCUEIL */
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background: linear-gradient(120deg, #e3e8dc, #f0eadc);
+}
+
+.hero-content {
+    max-width: 570px;
+}
+
+.subtitle {
+    letter-spacing: 3px;
+    margin-bottom: 22px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    background: #405b46;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* CATEGORIES */
+
+.categories, .shop, .about {
+    text-align: center;
+    padding: 65px 7%;
+}
+
+.category-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.category-list div {
+    padding: 25px 35px;
+    background: #e9eade;
+    border-radius: 8px;
+}
+
+/* PRODUITS */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.product img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.product h3 {
+    margin: 15px 0;
+}
+
+.product p {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.product button {
+    padding: 12px;
+    background: #405b46;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* PRESENTATION */
+
+.about {
+    background: #e9eade;
+    line-height: 1.8;
+}
+
+/* PIED DE PAGE */
+
+footer {
+    text-align: center;
+    background: #354b39;
+    color: white;
+    padding: 40px;
+    line-height: 2;
+}
+
+/* TELEPHONE */
+
+@media (max-width: 700px) {
+    header {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
