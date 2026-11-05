@@ -1,3 +1,6 @@
+/* =========================
+   CONFIGURATION GENERALE
+========================= */
 
 * {
     margin: 0;
@@ -15,7 +18,9 @@ body {
     color: #354536;
 }
 
-/* NAVIGATION */
+/* =========================
+   NAVIGATION
+========================= */
 
 header {
     display: flex;
@@ -23,19 +28,6 @@ header {
     align-items: center;
     padding: 22px 7%;
     background: white;
-}/* ARRIÈRE-PLAN DE LA PAGE D'ACCUEIL */
-
-#accueil {
-    background-image: 
-        linear-gradient(rgba(255,255,255,0.35), rgba(255,255,255,0.35)),
-        url("ecoze ar hero.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 550px;
-    display: flex;
-    align-items: center;
-    padding: 80px 8%;
 }
 
 .logo {
@@ -58,14 +50,27 @@ nav a, .cart {
     color: #354536;
 }
 
-/* PAGE D'ACCUEIL */
+/* =========================
+   PAGE D'ACCUEIL
+========================= */
 
 .hero {
     min-height: 520px;
     display: flex;
     align-items: center;
     padding: 70px 10%;
-    background: linear-gradient(120deg, #e3e8dc, #f0eadc);
+
+    /* Nouvelle photo d'arriere-plan */
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.25),
+            rgba(0, 0, 0, 0.25)
+        ),
+        url("./images/background.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -98,7 +103,9 @@ nav a, .cart {
     border-radius: 5px;
 }
 
-/* CATEGORIES */
+/* =========================
+   CATEGORIES
+========================= */
 
 .categories, .shop, .about {
     text-align: center;
@@ -119,7 +126,9 @@ nav a, .cart {
     border-radius: 8px;
 }
 
-/* PRODUITS */
+/* =========================
+   PRODUITS
+========================= */
 
 .products {
     display: grid;
@@ -158,14 +167,18 @@ nav a, .cart {
     width: 100%;
 }
 
-/* PRESENTATION */
+/* =========================
+   PRESENTATION
+========================= */
 
 .about {
     background: #e9eade;
     line-height: 1.8;
 }
 
-/* PIED DE PAGE */
+/* =========================
+   PIED DE PAGE
+========================= */
 
 footer {
     text-align: center;
@@ -175,9 +188,12 @@ footer {
     line-height: 2;
 }
 
-/* TELEPHONE */
+/* =========================
+   VERSION TELEPHONE
+========================= */
 
 @media (max-width: 700px) {
+
     header {
         flex-wrap: wrap;
         gap: 15px;
@@ -186,6 +202,12 @@ footer {
     nav {
         flex-wrap: wrap;
         gap: 15px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 50px 7%;
+        background-position: center;
     }
 
     .hero h1 {
